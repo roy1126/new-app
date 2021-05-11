@@ -43,7 +43,7 @@ class _ConnectToURlState extends State<ConnectToURl> {
               ),
               ElevatedButton(
                   onPressed: () async {
-                    provider.getData().then((value) => Navigator.push(
+                    await provider.getData().then((value) => Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => JsonData(
